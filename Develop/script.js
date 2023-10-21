@@ -1,3 +1,6 @@
+// Get references to the #generate element
+var generateBtn = document.querySelector("#generate");
+
 // Generate a random password based on criteria below;
 function generatePassword(){
 // Whether to include lower/uppercase, numbers, and/or special characters in random password  
@@ -7,6 +10,8 @@ function generatePassword(){
   const specialC = '~!@#$%^&*()-_=+[{]}",<.>?/';
 
 // Prompt for password choosing criteria;
+// Only decimal-exclude integers can be registered, also set exclusion condition with isNan
+// External source, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt 
 let length = parseInt(prompt('Choose between 8 to 128 characters for the password:'));
 while (isNaN(length) || length < 8 || length > 128)
     length = parseInt(prompt('Invalid input; Choose between 8 to 128 characters for the password:'));
