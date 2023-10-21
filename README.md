@@ -25,4 +25,4 @@ THEN the password is either displayed in an alert or written to the page
 
 ![image](https://github.com/justinsta624/Challenge-two/assets/143357899/e9ba38dc-6308-46bc-9937-0434f530dbca)
 
-deploy live URL: https://justinsta624.github.io/Challenge-three
+deploy live URL: https://justinsta624.github.io/JavapassgenC3
