@@ -12,7 +12,6 @@ while (isNaN(length) || length < 8 || length > 128)
     length = parseInt(prompt('Invalid input; Choose between 8 to 128 characters for the password:'));
 }
 
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
