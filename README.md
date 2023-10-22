@@ -23,6 +23,6 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
-![image](https://github.com/justinsta624/Challenge-two/assets/143357899/e9ba38dc-6308-46bc-9937-0434f530dbca)
+![image](https://github.com/justinsta624/JavapassgenC3/assets/143357899/fbd1956d-3d87-4b02-aa19-4c78d639072c)
 
 deploy live URL: https://justinsta624.github.io/JavapassgenC3
