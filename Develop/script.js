@@ -27,26 +27,26 @@ function generatePassword(){
   // use Prompt-box to answer as instructed on the criteria for password by "filling in the box"
   // Password condition: Only integers can be registered, exclude value with no number
   // using "!" as not equal to (external source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Inequality)
-  let promptinput = prompt('Choose between 8 to 128 characters for the password:');
+  let promptinput = prompt('Select a number between 8 to 128 to determine the length of new password:');
   let length = parseInt(promptinput);
   while (isNaN(length) || length < 8 || length > 128 || promptinput != length) {
-      promptinput = prompt('Invalid input; Choose between 8 to 128 characters for the password:');
+      promptinput = prompt('Invalid input; Select a number between 8 to 128 to determine the length of new password:');
       length = parseInt(promptinput);
   }
   // Use confirm-box to answer as instructed on the criteria for password, in case of "Yes/No question"
-  var addlowercase = confirm('add lowercase in password?');
+  var addlowercase = confirm('add lowercase in the password?');
   var adduppercase = confirm('add uppercase in password?');
-  var addnumbers = confirm('add numbers in password?');
-  var addspecialC = confirm('add special characters in password?');
+  var addnumbers = confirm('add numbers in the password?');
+  var addspecialC = confirm('add special characters in the password?');
 
   // using "!" as not equal to (external source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Inequality)
   // confirm whether or not to include lowercase, uppercase, numbers, and/or special characters
   while (!(addlowercase || adduppercase || addnumbers || addspecialC)) {
     alert('You must add at least one condition to generate a password.');
-    addlowercase = confirm('add lowercase in password?');
-    adduppercase = confirm('add uppercase in password?');
-    addnumbers = confirm('add numbers in password?');
-    addspecialC = confirm('add special characters in password?');
+    addlowercase = confirm('add lowercase in the password?');
+    adduppercase = confirm('add uppercase in the password?');
+    addnumbers = confirm('add numbers in the password?');
+    addspecialC = confirm('add special characters in the password?');
   }
   // check if the below variables are truthy (i.e., not false, 0, null, undefined, empty string, or NaN)
   // (external source: https://www.freecodecamp.org/news/javascript-if-statement-equality-and-truthy-falsy)
